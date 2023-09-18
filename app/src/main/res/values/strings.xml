@@ -1,6 +1,12 @@
 <resources>
-    <string name="app_name">KidsEducation</string>
+    <string name="app_name">Kids Education</string>
     <string name="giraffe">giraffe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="an_easy_way_to_learn">An easy way to \n learn</string>
+    <string name="next">Next</string>
+    <string name="reading">Reading</string>
+    <string name="numbers">Numbers</string>
     <!--
     hippo
     elephant
