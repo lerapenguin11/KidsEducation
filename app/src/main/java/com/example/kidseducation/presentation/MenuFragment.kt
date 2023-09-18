@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.example.kidseducation.R
 import com.example.kidseducation.databinding.FragmentMenuBinding
 import com.example.kidseducation.databinding.FragmentOnBoardingFirstBinding
+import com.example.kidseducation.utilits.replaceFragmentMain
 
 class MenuFragment : Fragment() {
     private var _binding : FragmentMenuBinding? = null
@@ -20,9 +21,9 @@ class MenuFragment : Fragment() {
 
         _binding = FragmentMenuBinding.inflate(inflater, container, false)
 
-        binding.blockNumber.setOnClickListener {  }
+        binding.blockNumber.setOnClickListener { replaceFragmentMain(NumberFragment()) }
 
-        binding.blockReading.setOnClickListener {  }
+        binding.blockReading.setOnClickListener { replaceFragmentMain(ReadingFragment()) }
 
         return binding.root
     }

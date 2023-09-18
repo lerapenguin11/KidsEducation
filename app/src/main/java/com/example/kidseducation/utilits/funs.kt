@@ -48,7 +48,7 @@ fun setStatusBarGradiantMain(activity: Activity) {
 fun makeBlur(fonEllipse : ConstraintLayout) {
 
     if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
-        val blurEffect = RenderEffect.createBlurEffect(10f, 15f, Shader.TileMode.MIRROR)
+        val blurEffect = RenderEffect.createBlurEffect(10f, 15f, Shader.TileMode.CLAMP)
         fonEllipse.setRenderEffect(blurEffect)
     }
 }
