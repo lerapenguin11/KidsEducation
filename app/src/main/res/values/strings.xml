@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">KidsEducation</string>
+    <string name="giraffe">giraffe</string>
+    <!--
+    hippo
+    elephant
+    tiger
+    lion
+    pig
+    zebra
+    bear
+    monkey
+    panda
+    crocodile
+    frog-->
 </resources>
