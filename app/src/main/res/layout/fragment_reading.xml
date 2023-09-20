@@ -11,9 +11,6 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="14dp"
         android:paddingBottom="30dp"
         android:background="@drawable/bg_fon_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +51,7 @@
             android:id="@+id/tv_question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What animal is this?"
+            android:text="@string/what_animal_is_this"
             android:textSize="16sp"
             android:fontFamily="@font/dm_sans"
             android:textColor="#373737"
@@ -68,8 +65,8 @@
             android:layout_height="wrap_content"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:orientation="horizontal"
-            android:paddingStart="20dp"
-            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
             tools:listitem="@layout/item_answer_reading"
             tools:itemCount="4"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -88,20 +85,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_question"
             app:layout_constraintVertical_bias="0.3">
-
-            <ImageView
-                android:id="@+id/icon_animals"
-                android:layout_width="155dp"
-                android:layout_height="212dp"
-                android:src="@drawable/bear"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/icon_animals"
+            android:layout_width="155dp"
+            android:layout_height="212dp"
+            tools:src="@drawable/bear"
+            app:layout_constraintBottom_toBottomOf="@+id/fon_ellipse"
+            app:layout_constraintEnd_toEndOf="@+id/fon_ellipse"
+            app:layout_constraintStart_toStartOf="@+id/fon_ellipse"
+            app:layout_constraintTop_toTopOf="@+id/fon_ellipse" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bt_next"
@@ -135,8 +130,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         tools:listitem="@layout/item_letter"
-        android:paddingEnd="14dp"
-        android:paddingStart="14dp"
+        tools:itemCount="4"
+        android:paddingStart="20dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/bt_next"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Kids Education</string>
-    <string name="giraffe">giraffe</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="an_easy_way_to_learn">An easy way to \n learn</string>
@@ -9,6 +8,10 @@
     <string name="numbers">Numbers</string>
     <string name="all_about_number">All about number</string>
     <string name="level">Level</string>
+    <string name="giraffe">GIRAFFE</string>
+    <string name="hippo">HIPPO</string>
+    <string name="what_animal_is_this">What animal is this?</string>
+    <string name="what_is_this_figure">What is this figure?</string>
     <!--
     hippo
     elephant
@@ -21,4 +24,15 @@
     panda
     crocodile
     frog-->
+
+    <string name="one">One</string>
+    <string name="nine">Nine</string>
+    <!--Two
+    Three
+    Four
+    Five
+    Six
+    Seven
+    Eight
+    Nine-->
 </resources>
