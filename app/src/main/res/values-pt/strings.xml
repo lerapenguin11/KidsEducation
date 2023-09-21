@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Educação infantil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Olá fragmento em branco</string>
+    <string name="an_easy_way_to_learn">Uma maneira fácil de aprender</string>
+    <string name="next">Próximo</string>
+    <string name="reading">Leitura</string>
+    <string name="numbers">Números</string>
+    <string name="all_about_number">Tudo sobre o número</string>
+    <string name="level">Nível</string>
+    <string name="giraffe">GIRAFA</string>
+    <string name="hippo">HIPOPÓTAMO</string>
+    <string name="what_animal_is_this">Que animal é esse?</string>
+    <string name="what_is_this_figure">O que é essa figura?</string>
+
+    <string name="elephant">ELEFANTE</string>
+    <string name="tiger">TIGRE</string>
+    <string name="lion">LEÃO</string>
+    <string name="pig">PORCO</string>
+    <string name="zebra">ZEBRA</string>
+    <string name="bear">URSO</string>
+    <string name="monkey">MACACO</string>
+    <string name="panda">PANDA</string>
+    <string name="crocodile">CROCODILO</string>
+    <string name="frog">SAPO</string>
+
+    <string name="excellent">Excelente!</string>
+    <string name="you_ve_got_a_perfect_score">Você tem uma pontuação perfeita!</string>
+    <string name="one">Um</string>
+    <string name="nine">Nove</string>
+    <string name="two">Dois</string>
+    <string name="three">Três</string>
+    <string name="four">Quatro</string>
+    <string name="five">Cinco</string>
+    <string name="six">Seis</string>
+    <string name="seven">Sete</string>
+    <string name="eight">Oito</string>
+</resources>

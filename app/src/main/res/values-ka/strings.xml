@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">საბავშვო განათლება</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">გამარჯობა ცარიელი ფრაგმენტი</string>
+    <string name="an_easy_way_to_learn">მარტივი გზა \ n სწავლისთვის</string>
+    <string name="next">შემდეგი</string>
+    <string name="reading">Კითხვა</string>
+    <string name="numbers">რიცხვი</string>
+    <string name="all_about_number">ყველაფერი რიცხვის შესახებ</string>
+    <string name="level">დონე</string>
+    <string name="giraffe">ᲟᲘᲠᲐᲤᲘ</string>
+    <string name="hippo">ჰიპო</string>
+    <string name="what_animal_is_this">რა ცხოველია ეს?</string>
+    <string name="what_is_this_figure">რა არის ეს ფიგურა?</string>
+
+    <string name="elephant">სპილო</string>
+    <string name="tiger">ვეფხვი</string>
+    <string name="lion">ლომი</string>
+    <string name="pig">ღორი</string>
+    <string name="zebra">ზებრა</string>
+    <string name="bear">ტარება</string>
+    <string name="monkey">მაიმუნი</string>
+    <string name="panda">პანდა</string>
+    <string name="crocodile">ნიანგი</string>
+    <string name="frog">ბაყაყი</string>
+
+    <string name="excellent">შესანიშნავი!</string>
+    <string name="you_ve_got_a_perfect_score">თქვენ გაქვთ შესანიშნავი ქულა!</string>
+    <string name="one">ერთი</string>
+    <string name="nine">ცხრა</string>
+    <string name="two">ორი</string>
+    <string name="three">სამი</string>
+    <string name="four">ოთხი</string>
+    <string name="five">ხუთი</string>
+    <string name="six">Ექვსი</string>
+    <string name="seven">შვიდი</string>
+    <string name="eight">რვა</string>
+</resources>

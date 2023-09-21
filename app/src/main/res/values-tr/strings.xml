@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Çocuk Eğitimi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Merhaba boş parça</string>
+    <string name="an_easy_way_to_learn">Öğrenmenin kolay bir yolu \n</string>
+    <string name="next">Sonraki</string>
+    <string name="reading">Okuma</string>
+    <string name="numbers">Sayılar</string>
+    <string name="all_about_number">Sayı hakkında her şey</string>
+    <string name="level">Seviye</string>
+    <string name="giraffe">ZÜRAFA</string>
+    <string name="hippo">suaygırı</string>
+    <string name="what_animal_is_this">Bu hangi hayvan\?</string>
+    <string name="what_is_this_figure">Bu rakam nedir\?</string>
+
+    <string name="elephant">FİL</string>
+    <string name="tiger">KAPLAN</string>
+    <string name="lion">ASLAN</string>
+    <string name="pig">DOMUZ</string>
+    <string name="zebra">ZEBRA</string>
+    <string name="bear">AYI</string>
+    <string name="monkey">MAYMUN</string>
+    <string name="panda">PANDA</string>
+    <string name="crocodile">TİMSAH</string>
+    <string name="frog">KURBAĞA</string>
+
+    <string name="excellent">Harika!</string>
+    <string name="you_ve_got_a_perfect_score">Mükemmel bir puanınız var!</string>
+    <string name="one">Bir</string>
+    <string name="nine">Dokuz</string>
+    <string name="two">İki</string>
+    <string name="three">Üç</string>
+    <string name="four">Dört</string>
+    <string name="five">Beş</string>
+    <string name="six">Altı</string>
+    <string name="seven">Yedi</string>
+    <string name="eight">Sekiz</string>
+</resources>
