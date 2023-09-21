@@ -12,6 +12,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.kidseducation.R
+import com.example.kidseducation.business.datebase.AppDatabase
+import com.example.kidseducation.business.repos.ResultRepository
 import com.example.kidseducation.databinding.FragmentReadingBinding
 import com.example.kidseducation.presentation.adapter.LetterAnswerAdapter
 import com.example.kidseducation.presentation.adapter.LetterKeyAdapter
@@ -19,6 +22,8 @@ import com.example.kidseducation.presentation.adapter.listener.LetterListener
 import com.example.kidseducation.utilits.makeBlur
 import com.example.kidseducation.utilits.replaceFragmentMain
 import com.example.kidseducation.viewmodel.ReadingViewModel
+import com.example.kidseducation.viewmodel.ResultViewModel
+import com.example.kidseducation.viewmodel.ResultViewModelFactory
 
 class ReadingFragment : Fragment(), LetterListener {
     private var _binding : FragmentReadingBinding? = null
@@ -31,6 +36,7 @@ class ReadingFragment : Fragment(), LetterListener {
     private var countLetter = 0
     private var textAnswer : String = ""
     private var listSize = 0
+    private lateinit var resultViewModel : ResultViewModel
 
     @RequiresApi(Build.VERSION_CODES.S)
     override fun onCreateView(
@@ -41,29 +47,52 @@ class ReadingFragment : Fragment(), LetterListener {
         _binding = FragmentReadingBinding.inflate(inflater, container, false)
 
         viewModel = ViewModelProvider(requireActivity()).get(ReadingViewModel::class.java)
+        val application = requireNotNull(this.activity).application
+        val dao = AppDatabase.getDatabase(application).resultDao()
+        val repository = ResultRepository(dao)
+        val viewModelFactoryNews = ResultViewModelFactory(repository)
+
+        resultViewModel = ViewModelProvider(this, viewModelFactoryNews).get(ResultViewModel::class.java)
 
         makeBlur(binding.fonEllipse)
         observeData()
         onCkick()
-        binding.ivArrow.setOnClickListener { replaceFragmentMain(MenuFragment()) }
+        binding.ivArrow.setOnClickListener {
+            deleteResult()
+            replaceFragmentMain(MenuFragment())
+        }
 
         return binding.root
+    }
+
+    private fun deleteResult() {
+        resultViewModel.allResult.observe(viewLifecycleOwner, Observer {
+            if (it.isNotEmpty()){
+                resultViewModel.deleteResult(it)
+            }
+        })
     }
 
     private fun onCkick() {
         binding.btNext.setOnClickListener {
             if (adapterAnswer.resultText(count).equals(textAnswer)){
+                viewModel.getResultEquipment().observe(viewLifecycleOwner, Observer {
+                    val result = com.example.kidseducation.business.datebase.Result(text = it.get(position).textAnswer,
+                    icon = it.get(position).icon)
+
+                    resultViewModel.insertResult(result)
+                })
                 Toast.makeText(requireContext(), "Correct: ${adapterAnswer.resultText(count)}", Toast.LENGTH_SHORT).show()
             }else{
                 Toast.makeText(requireContext(), "Not correct: ${adapterAnswer.resultText(count)}", Toast.LENGTH_SHORT).show()
             }
+            position++
             if (position < listSize){
-                position++
                 count = 0
                 countLetter = 0
                 observeData()
             } else{
-                replaceFragmentMain(MenuFragment())
+                replaceFragmentMain(ResultFragment())
             }
         }
     }
@@ -83,6 +112,7 @@ class ReadingFragment : Fragment(), LetterListener {
             countLetter = it.get(this.position).countLetter
             textAnswer = getString(it.get(this.position).textAnswer)
             listSize = it.size
+            binding.tvLevel.text = "${getString(R.string.level)} ${it.get(position).id+1}"
         })
     }
 

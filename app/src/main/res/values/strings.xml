@@ -12,27 +12,27 @@
     <string name="hippo">HIPPO</string>
     <string name="what_animal_is_this">What animal is this?</string>
     <string name="what_is_this_figure">What is this figure?</string>
-    <!--
-    hippo
-    elephant
-    tiger
-    lion
-    pig
-    zebra
-    bear
-    monkey
-    panda
-    crocodile
-    frog-->
 
+    <string name="elephant">ELEPHANT</string>
+    <string name="tiger">TIGER</string>
+    <string name="lion">LION</string>
+    <string name="pig">PIG</string>
+    <string name="zebra">ZEBRA</string>
+    <string name="bear">BEAR</string>
+    <string name="monkey">MONKEY</string>
+    <string name="panda">PANDA</string>
+    <string name="crocodile">CROCODILE</string>
+    <string name="frog">FROG</string>
+
+    <string name="excellent">Excellent!</string>
+    <string name="you_ve_got_a_perfect_score">You’ve got a perfect score!</string>
     <string name="one">One</string>
     <string name="nine">Nine</string>
-    <!--Two
-    Three
-    Four
-    Five
-    Six
-    Seven
-    Eight
-    Nine-->
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="four">Four</string>
+    <string name="five">Five</string>
+    <string name="six">Six</string>
+    <string name="seven">Seven</string>
+    <string name="eight">Eight</string>
 </resources>
